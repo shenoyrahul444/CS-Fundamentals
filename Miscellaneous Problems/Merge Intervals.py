@@ -10,6 +10,7 @@ class Solution(object):
         :type intervals: List[Interval]
         :rtype: List[Interval]
         """
+
         if intervals == [] or len(intervals) == 1:
             return intervals
         intervals.sort(key=lambda x: x.start)
