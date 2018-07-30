@@ -7,12 +7,12 @@ def isPrime(n):
         return False
     i= 5
     while i * i <= n:
-        if n% i ==0 or n%(1+2)==0:
+        if n% i ==0 or n%(i+2)==0:
             return False
         i+=6
     return True
 
-for i in range(1,100):
+for i in range(1,1000):
     if isPrime(i):
         print(i)
 

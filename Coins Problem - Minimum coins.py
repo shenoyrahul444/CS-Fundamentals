@@ -9,3 +9,4 @@ def rec_coin(target,coins):
         return min_coins
 
 print(rec_coin(6,[1,2,5]))
+

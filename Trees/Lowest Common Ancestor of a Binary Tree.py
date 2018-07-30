@@ -25,6 +25,7 @@ class Node:
         self.val = val
         self.left = None
         self.right = None
+
 nd = Node(3)
 nd.left = Node(9)
 nd.right = Node(8)
@@ -34,3 +35,5 @@ nd.right.right = Node(7)
 nd.right.left = Node(1)
 
 print(Solution().lowestCommonAncestor(nd,nd.left.right,nd.left.left).val)
+
+''
