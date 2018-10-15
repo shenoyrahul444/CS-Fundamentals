@@ -32,9 +32,7 @@ class Solution(object):
 
         mincost0,mincost1 = cost[0],cost[1]
         for i in range(2,n):
-            temp = mincost1
-            mincost1 = min(mincost0,mincost1) + cost[i]
-            mincost0 = temp
+            mincost0,mincost1 = mincost1, min(mincost0,mincost1) + cost[i]
         return min(mincost0,mincost1)
 
 
