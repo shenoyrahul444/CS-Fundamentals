@@ -16,3 +16,4 @@ for i in range(1,1000):
     if isPrime(i):
         print(i)
 
+
